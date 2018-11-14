@@ -1,0 +1,130 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+    <listener>
+    <listener-class>by.iba.student.web.listener.StudentContextListener</listener-class>
+  </listener>
+  
+  <listener>
+    <listener-class>by.iba.professor.web.listener.ProfessorContextListener</listener-class>
+  </listener>
+  
+  <listener>
+    <listener-class>by.iba.professor.web.listener.ProfessorContextListener</listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>AddStudentWorker</servlet-name>
+    <servlet-class>by.iba.student.web.servlet.AddStudentWorker</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AllStudentsDisplayer</servlet-name>
+    <servlet-class>by.iba.student.web.servlet.AllStudentsDisplayer</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddProfessorWorker</servlet-name>
+    <servlet-class>by.iba.professor.web.servlet.AddProfessorWorker</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AllProfessorsDisplayer</servlet-name>
+    <servlet-class>by.iba.professor.web.servlet.AllProfessorsDisplayer</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddMarkWorker</servlet-name>
+    <servlet-class>by.iba.mark.web.servlet.AddMarkWorker</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AllMarksDisplayer</servlet-name>
+    <servlet-class>by.iba.mark.web.servlet.AllMarksDisplayer</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddUserWorker</servlet-name>
+    <servlet-class>by.iba.user.web.servlet.AddUserWorker</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AllUsersDisplayer</servlet-name>
+    <servlet-class>by.iba.user.web.servlet.AllUsersDisplayer</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddSubjectWorker</servlet-name>
+    <servlet-class>by.iba.subject.web.servlet.AddSubjectWorker</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AllSubjectsDisplayer</servlet-name>
+    <servlet-class>by.iba.subject.web.servlet.AllSubjectsDisplayer</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddGroupWorker</servlet-name>
+    <servlet-class>by.iba.group.web.servlet.AddGroupWorker</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AllGroupsDisplayer</servlet-name>
+    <servlet-class>by.iba.group.web.servlet.AllGroupsDisplayer</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddStudentWorker</servlet-name>
+    <url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AllStudentsDisplayer</servlet-name>
+    <url-pattern>/allStudents</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddProfessorWorker</servlet-name>
+    <url-pattern>/addProfessor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AllProfessorsDisplayer</servlet-name>
+    <url-pattern>/allProfessors</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>AddMarkWorker</servlet-name>
+    <url-pattern>/addMark</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AllMarksDisplayer</servlet-name>
+    <url-pattern>/allMarks</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>AddUserWorker</servlet-name>
+    <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AllUsersDisplayer</servlet-name>
+    <url-pattern>/allUsers</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>AddSubjectWorker</servlet-name>
+    <url-pattern>/addSubject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AllSubjectsDisplayer</servlet-name>
+    <url-pattern>/allSubjects</url-pattern>
+  </servlet-mapping>
+</web-app>
+
